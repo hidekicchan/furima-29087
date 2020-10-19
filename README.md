@@ -42,30 +42,45 @@ Things you may want to cover:
 - has_many :items
 - has_many :comments
 - has_one :address
+- has_one :item_transaction
 
 ## items テーブル
 
-| Column        | Type       | Option                         |
-| ------------- | ---------- | ------------------------------ |
-| name          | string     | null: false                    |
-| image         | string     | null: false                    |
-| description   | text       | null: false                    |
-| category      | integer    | null: false                    |
-| status        | integer    | null: false                    |
-| shipping_fee  | integer    | null: false                    |
-| prefecture    | integer    | null: false                    |
-| shipping_date | integer    | null: false                    |
-| price         | integer    | null: false                    |
-| user          | references | null: false, foreign_key: true |
+| Column           | Type       | Option                         |
+| ---------------- | ---------- | ------------------------------ |
+| name             | string     | null: false                    |
+| image            | string     | null: false                    |
+| description      | text       | null: false                    |
+| category_id      | integer    | null: false                    |
+| status_id        | integer    | null: false                    |
+| shipping_fee_id  | integer    | null: false                    |
+| prefecture_id    | integer    | null: false                    |
+| shipping_date_id | integer    | null: false                    |
+| price            | integer    | null: false                    |
+| user             | references | null: false, foreign_key: true |
 
 ### Association
+
 - belongs_to :user
 - has_many :comments
+- has_one :item_transaction
 - belongs_to_active_hash :category
 - belongs_to_active_hash :status
 - belongs_to_active_hash :shipping_fee
 - belongs_to_active_hash :prefecture
 - belongs_to_active_hash :shipping_date
+
+## item_transactions テーブル
+
+| Column      | Type       | Options           |
+|-------------|----------- |------------------ |
+| item(FK)    | references | foreign_key: true |
+| user(FK)    | references | foreign_key: true |
+
+### Association
+- belongs_to :user
+- belongs_to :item
+
 
 ## comments テーブル
 
@@ -89,7 +104,7 @@ Things you may want to cover:
 | city          | string     | default: ""                    |
 | house_number  | string     | default: ""                    |
 | building_name | string     | default: ""                    |
-| tel_number    | string     | null: false, foreign_key: true |
+| tel_number    | string     | null: false                    |
 | user          | references | null: false, foreign_key: true |
 
 ### Association
