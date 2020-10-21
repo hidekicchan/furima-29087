@@ -42,14 +42,13 @@ Things you may want to cover:
 - has_many :items
 - has_many :comments
 - has_one :address
-- has_one :item_transaction
+- has_many :item_transactions
 
 ## items テーブル
 
 | Column           | Type       | Option                         |
 | ---------------- | ---------- | ------------------------------ |
 | name             | string     | null: false                    |
-| image            | string     | null: false                    |
 | description      | text       | null: false                    |
 | category_id      | integer    | null: false                    |
 | status_id        | integer    | null: false                    |
@@ -69,6 +68,7 @@ Things you may want to cover:
 - belongs_to_active_hash :shipping_fee
 - belongs_to_active_hash :prefecture
 - belongs_to_active_hash :shipping_date
+- has_one_attached :image
 
 ## item_transactions テーブル
 
@@ -80,6 +80,7 @@ Things you may want to cover:
 ### Association
 - belongs_to :user
 - belongs_to :item
+- has_one :address
 
 
 ## comments テーブル
@@ -100,7 +101,7 @@ Things you may want to cover:
 | Column        | Type       | Option                         |
 | ------------- | ---------- | ------------------------------ |
 | postal_code   | string     | null: false                    |
-| prefecture    | integer    | null: false                    |
+| prefecture_id | integer    | null: false                    |
 | city          | string     | default: ""                    |
 | house_number  | string     | default: ""                    |
 | building_name | string     | default: ""                    |
@@ -111,5 +112,5 @@ Things you may want to cover:
 
 - belongs_to :user
 - belongs_to_active_hash :prefecture
-
+- belongs_to :item_transaction
 
