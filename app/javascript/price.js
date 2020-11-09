@@ -1,5 +1,5 @@
-window.addEventListener('DOMContentLoaded', function(){
-  
+window.addEventListener('load', function(){
+
   const itemPrice = document.getElementById("item-price")
   const addTaxPrice = document.getElementById("add-tax-price")
   const profitPrice = document.getElementById("profit")
