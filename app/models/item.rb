@@ -15,10 +15,10 @@ class Item < ApplicationRecord
     validates :image
   end
   with_options presence: true, numericality: { other_than: 0, message: 'Select' } do
-  validates :category_id
-  validates :status_id
-  validates :shipping_fee_id
-  validates :prefecture_id
-  validates :shipping_date_id
+    validates :category_id
+    validates :status_id
+    validates :shipping_fee_id
+    validates :prefecture_id
+    validates :shipping_date_id
   end
 end
