@@ -9,7 +9,7 @@ class UserOrder
     validates :prefecture_id,  numericality: { other_than: 0, message: 'Select' }
     validates :city
     validates :house_number
-    validates :tel_number, format: {with: /[0-9]{,11}/}
+    validates :tel_number, format: {with: /\A[0-9]{,11}\z/}
   end
 
   def save
