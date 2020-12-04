@@ -1,7 +1,7 @@
 class UserOrder
 
   include ActiveModel::Model
-  attr_accessor :user_id, :item_id,:postal_code, :prefecture_id, :city, :house_number, :building_name, :tel_number
+  attr_accessor :user_id, :item_id,:postal_code, :prefecture_id, :city, :house_number, :building_name, :tel_number, :token
 
 
   with_options presence: true do
@@ -10,6 +10,7 @@ class UserOrder
     validates :city
     validates :house_number
     validates :tel_number, format: {with: /\A[0-9]{,11}\z/}
+    validates :token
   end
 
   def save
