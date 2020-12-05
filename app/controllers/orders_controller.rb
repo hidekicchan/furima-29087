@@ -6,6 +6,10 @@ class OrdersController < ApplicationController
      if @items.user_id == current_user.id
       redirect_to root_path
      end
+
+     unless @items.order
+      redirect_to root_path
+     end
   end
 
   def create
