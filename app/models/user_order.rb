@@ -9,6 +9,8 @@ class UserOrder
     validates :house_number
     validates :tel_number, format: { with: /\A[0-9]{,11}\z/ }
     validates :token
+    validates :user_id
+    validates :item_id
   end
 
   def save
