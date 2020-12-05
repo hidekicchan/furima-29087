@@ -1,6 +1,6 @@
-<mxfile host="65bd71144e" modified="2020-10-23T23:15:25.507Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.50.1 Chrome/83.0.4103.122 Electron/9.2.1 Safari/537.36" etag="OHdsYV5TOGEyWvduKLrr" version="13.6.5" pages="2">
+<mxfile host="65bd71144e" modified="2020-11-17T04:20:14.044Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.51.1 Chrome/83.0.4103.122 Electron/9.3.3 Safari/537.36" etag="DHC9Ecp-mwVIM8gf0LeI" version="13.6.5" pages="2">
     <diagram id="_M3X4lFTjFpCh1O4AsxT" name="ページ1">
-        <mxGraphModel dx="728" dy="680" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#F4F1DE" math="0" shadow="0">
+        <mxGraphModel dx="158" dy="579" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#F4F1DE" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -188,7 +188,7 @@
                 <mxCell id="K9OpWMY4eO4AvbzmNHTL-7" value="user_id(出品者)" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;fontColor=#393C56;" parent="K9OpWMY4eO4AvbzmNHTL-5" vertex="1">
                     <mxGeometry y="266" width="176" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="8" value="item_transactions" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;strokeColor=#E07A5F;fillColor=#F2CC8F;fontColor=#393C56;" parent="1" vertex="1">
+                <mxCell id="8" value="orders" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;strokeColor=#E07A5F;fillColor=#F2CC8F;fontColor=#393C56;" parent="1" vertex="1">
                     <mxGeometry x="240" y="350" width="160" height="86" as="geometry"/>
                 </mxCell>
                 <mxCell id="10" value="user" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;fontColor=#393C56;" parent="8" vertex="1">
@@ -227,31 +227,31 @@
                 <mxCell id="31" value="1" style="resizable=0;html=1;align=right;verticalAlign=bottom;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;" parent="30" connectable="0" vertex="1">
                     <mxGeometry x="1" relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="35" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E07A5F;fillColor=#F2CC8F;fontColor=#393C56;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeWidth=3;" edge="1" parent="1" source="K9OpWMY4eO4AvbzmNHTL-142">
+                <mxCell id="35" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#E07A5F;fillColor=#F2CC8F;fontColor=#393C56;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeWidth=3;" parent="1" source="K9OpWMY4eO4AvbzmNHTL-142" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="390" y="660" as="sourcePoint"/>
                         <mxPoint x="520" y="671" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="36" value="1" style="resizable=0;html=1;align=right;verticalAlign=bottom;" connectable="0" vertex="1" parent="35">
+                <mxCell id="36" value="1" style="resizable=0;html=1;align=right;verticalAlign=bottom;" parent="35" connectable="0" vertex="1">
                     <mxGeometry x="1" relative="1" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
     </diagram>
     <diagram id="71rbsX8Uaar8zCObKZIw" name="ページ2">
-        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;
+        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;
         <mxGraphModel dx="242" dy="579" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
-            &#xa;            &#xa;            &#xa;            &#xa;            &#xa;            &#xa;            &#xa;            &#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;
+            &#xa;            &#xa;            &#xa;            &#xa;            &#xa;            &#xa;            &#xa;            &#xa;            &#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;
             <root>
-                &#xa;                &#xa;                &#xa;                &#xa;                &#xa;                &#xa;                &#xa;                &#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;
+                &#xa;                &#xa;                &#xa;                &#xa;                &#xa;                &#xa;                &#xa;                &#xa;                &#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;
                 <mxCell id="DISi9SH0viCWAedolr0C-0"/>
-                &#xa;                &#xa;                &#xa;                &#xa;                &#xa;                &#xa;                &#xa;                &#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;
+                &#xa;                &#xa;                &#xa;                &#xa;                &#xa;                &#xa;                &#xa;                &#xa;                &#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;
                 <mxCell id="DISi9SH0viCWAedolr0C-1" parent="DISi9SH0viCWAedolr0C-0"/>
-                &#xa;                &#xa;                &#xa;                &#xa;                &#xa;                &#xa;                &#xa;                &#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;
+                &#xa;                &#xa;                &#xa;                &#xa;                &#xa;                &#xa;                &#xa;                &#xa;                &#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;
             </root>
-            &#xa;            &#xa;            &#xa;            &#xa;            &#xa;            &#xa;            &#xa;            &#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;
+            &#xa;            &#xa;            &#xa;            &#xa;            &#xa;            &#xa;            &#xa;            &#xa;            &#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;
         </mxGraphModel>
-        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;
+        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;
     </diagram>
 </mxfile>

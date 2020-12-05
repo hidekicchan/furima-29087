@@ -41,7 +41,7 @@ Things you may want to cover:
 
 - has_many :items
 - has_many :comments
-- has_many :item_transactions
+- has_many :orders
 
 ## items テーブル
 
@@ -61,7 +61,7 @@ Things you may want to cover:
 
 - belongs_to :user
 - has_many :comments
-- has_one :item_transaction
+- has_one :order
 - belongs_to_active_hash :category
 - belongs_to_active_hash :status
 - belongs_to_active_hash :shipping_fee
@@ -69,7 +69,7 @@ Things you may want to cover:
 - belongs_to_active_hash :shipping_date
 - has_one_attached :image
 
-## item_transactions テーブル
+## orders テーブル
 
 | Column      | Type       | Options           |
 |-------------|----------- |------------------ |
@@ -105,10 +105,9 @@ Things you may want to cover:
 | house_number    | string     | null: false                    |
 | building_name   | string     |                                |
 | tel_number      | string     | null: false                    |
-|item_transaction | references | null: false, foreign_key: true |
+| order           | references | null: false, foreign_key: true |
 
 ### Association
 
 - belongs_to_active_hash :prefecture
-- belongs_to :item_transaction
-
+- belongs_to :order
