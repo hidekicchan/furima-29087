@@ -47,7 +47,7 @@ RSpec.describe UserOrder, type: :model do
         expect(@user_order.errors.full_messages).to include("Tel number can't be blank")
       end
       it '電話番号が12桁以上だと登録できない' do
-        @user_order.tel_number = '09000001111222'
+        @user_order.tel_number = '090001111222'
         @user_order.valid?
         expect(@user_order.errors.full_messages).to include('Tel number is invalid')
       end

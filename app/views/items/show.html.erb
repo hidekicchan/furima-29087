@@ -34,9 +34,8 @@
   <% elsif user_signed_in? %> 
     <% if @item.order == nil %>
       <%= link_to '購入画面に進む', item_orders_path(@item.id),class:"item-red-btn"%>
-     <% else %>
      <% end %>
-  <% else %>
+    <% else %>
   <% end %>
 
     <div class="item-explain-box">
